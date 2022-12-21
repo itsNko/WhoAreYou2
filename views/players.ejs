@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Players Control Panel</title>
+</head>
+<body style="margin:auto; text-align: center">
+    <h1>Players Control Panel</h1>
+    <a href="/api/v1/players/add"><button>Insert Player</button></a>
+    <h2>Read, update or delete player:</h2>
+    <form action="/api/v1/players" method="post">
+        <label for="playerid">Player ID:</label>
+        <input type="text" id="playerid" name="playerid">
+        <input type="submit" class="form-submit" value="Search Player">
+    </form>
+    <br>
+    <br>
+    <a href="/logout"><button>LogOut</button></a>
+</body>
+</html>

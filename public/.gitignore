@@ -1,0 +1,3 @@
+#Ignora archivos del directorio .idea
+/.idea
+.DS_Store

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insert Player</title>
+</head>
+<body>
+    <h1>Insert Player:</h1>
+    <form action="/api/v1/players/add" method="post">
+        <label for="id">Player ID:</label>
+        <input type="number" id="id" name="id">
+        <br>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <br>
+        <br>
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality">
+        <br>
+        <br>
+        <label for="teamid">Team ID:</label>
+        <input type="number" id="teamid" name="teamid">
+        <br>
+        <br>
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position">
+        <br>
+        <br>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number">
+        <br>
+        <br>
+        <label for="leagueid">League ID:</label>
+        <input type="number" id="leagueid" name="leagueid">
+        <br>
+        <br>
+        <input type="submit" class="form-submit" value="Insert Player">
+    </form>
+</body>
+</html>

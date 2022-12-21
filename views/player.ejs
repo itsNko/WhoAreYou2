@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Player CRUD</title>
+</head>
+<body>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>BIRTHDATE</th>
+            <th>NATIONALITY</th>
+            <th>TEAMID</th>
+            <th>POSITION</th>
+            <th>NUMBER</th>
+            <th>LEAGUEID</th>
+            <th>CRUD</th>
+        </tr>
+        </thead>
+            <tr>
+                <td> <%= element.id %></td>
+                <td> <%= element.name %></td>
+                <td> <%= element.birthdate %></td>
+                <td> <%= element.nationality %></td>
+                <td><%= element.teamId %></td>
+                <td><%= element.position %></td>
+                <td><%= element.number %></td>
+                <td><%= element.leagueId %></td>
+                <td>
+                    <a href="/api/v1/players/edit/<%= element.id %>">Edit</a>
+                    <a href="/api/v1/players/remove/<%= element.id %>">Delete</a>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

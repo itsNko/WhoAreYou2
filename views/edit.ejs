@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Player</title>
+</head>
+<body>
+    <h1>Edit Player:</h1>
+    <form action="/api/v1/players/edit" method="post">
+        <label for="id">Player ID:</label>
+        <input type="number" id="id" name="id" value="<%= elem.id %>">
+        <br>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= elem.name %>">
+        <br>
+        <br>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" value="<%= elem.birthdate %>">
+        <br>
+        <br>
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" value="<%= elem.nationality %>">
+        <br>
+        <br>
+        <label for="teamId">Team ID:</label>
+        <input type="number" id="teamId" name="teamId" value="<%= elem.teamId %>">
+        <br>
+        <br>
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" value="<%= elem.position %>">
+        <br>
+        <br>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" value="<%= elem.number %>">
+        <br>
+        <br>
+        <label for="leagueId">League ID:</label>
+        <input type="number" id="leagueid" name="leagueId" value="<%= elem.leagueId %>">
+        <br>
+        <br>
+        <input type="submit" class="form-submit" value="Edit Player">
+    </form>
+</body>
+</html>
